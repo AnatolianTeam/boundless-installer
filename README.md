@@ -10,24 +10,30 @@ Bu installer, Boundless Dev ve Prover rolü için otomatik kurulum ve kolay kull
 
 ## Hızlı Kurulum
 
+### boundless_installer klasörünü oluşturun
+mkdir -p ~/boundless_installer && cd ~/boundless_installer
 
 ### Installer'ı indirin
 ```bash
-wget https://github.com/AnatolianTeam/boundless-installer/raw/main/boundless_installer
+wget https://github.com/KULLANICI_ADINIZ/boundless-installer/raw/main/boundless_installer
+```
+### Hash dosyasını indirin
+```bash
+wget https://github.com/KULLANICI_ADINIZ/boundless-installer/raw/main/boundless_installer.sha256
+```
+### Hash doğrulaması yapın (önerilen)
+```bash
+sha256sum -c boundless_installer.sha256
 ```
 ### Çalıştırma izni verin
 ```bash
 chmod +x boundless_installer
 ```
-### Hash doğrulaması yapın (opsiyonel ama önerilen)
-```bash
-wget https://github.com/AnatolianTeam/boundless-installer/raw/main/boundless_installer.sha256
-sha256sum -c boundless_installer.sha256
-```
 ### Installer'ı çalıştırın
 ```bash
 ./boundless_installer
 ```
+
 
 ## Menü Seçenekleri
 
